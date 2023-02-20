@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./IMG/favicon_book.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap">
+    <title>Contato - Eduardo Gotardi</title>
+</head>
+<body class="bg">
+    <div class="a4border">
+        <header>
+            <div class="menu" id="menu01">
+                <h2><a href="./index.html">Início</a></h2>
+                <h2><a href="./about.html">Sobre</a></h2>
+            </div>
+            <h2 class="contacth2">Entre em contato!</h2>
+        </header>
+        <div class="formPanel">
+            <form action="https://formspree.io/f/mwkjovng" method="POST">
+                <div class="formPanelChild">
+                    <div class="textForms">
+                        <p>
+                            <label>Nome</label><br>
+                            <input type="text" required name="name" id="name">
+                        </p>
+                        <p>
+                            <label for="email">E-mail</label><br>
+                            <input type="email" required name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="message">Mensagem</label><br>
+                            <textarea type="message" required name="message" id="message"></textarea>
+                        </p>
+                    </div>
+                    <div class="selectForms">
+                        <p>
+                            <div class="ulCheckbox">
+                            <label>Como chegou até aqui?</label>
+                                <ul>
+                                    <li><input value="sim" name="Encontrou no Google" type="checkbox">Google</li>
+                                    <li><input value="sim" name="Encontrou no YouTube" type="checkbox">YouTube</li>
+                                    <li><input value="sim" name="Encontrou no Github" type="checkbox">Github</li>
+                                    <li><input value="sim" name="Encontrou no LinkedIn" type="checkbox">LinkedIn</li>
+                                    <li><input value="sim" name="Encontrou Pessoalmente" type="checkbox">Conheci pessoalmente</li>
+                                </ul>
+                            </div>
+                            <div class="ulRadio">
+                            <label>Motivo do contato:</label>
+                                <ul>
+                                    <li><input value="Comentário" name="Motivo do Contato" type="radio">Comentário</li>
+                                    <li><input value="Dúvida" name="Motivo do Contato" type="radio">Dúvida</li>
+                                    <li><input value="Convite" name="Motivo do Contato" type="radio">Convite</li>
+                                    <li><input value="Proposta/Orçamento" name="Motivo do Contato" type="radio">Proposta/Orçamento</li>
+                                </ul>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <button class="form_button" type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+        <br>
+        <footer class="footer">
+            <div class="footerBox">
+                <a href="https://github.com/dugotardi" target="_blank" title="Github">Created and Designed by Eduardo Gotardi ©2023</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
