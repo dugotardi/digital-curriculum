@@ -1,5 +1,5 @@
-# digital-curriculum-project
+# digital-curriculum
 
-Meu currículo digital
+Curriculum Digital - Eduardo Gotardi - 2023
 
-Ainda em construção
+Ainda em construção.
