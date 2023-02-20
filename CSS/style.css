@@ -10,7 +10,7 @@ a {
 .bg {
     background-color: #61E8E1;
     background-image: url(../IMG/bg1.png);
-    /* background-size: cover; */
+    background-size: cover;
 }
 .a4border {
     width: 825px;
@@ -21,7 +21,6 @@ a {
     background-color: #ffffff;
     background-image: url(../IMG/paper-texture.png);
     background-size: cover;
-    /* background-position: center; */
     position: relative;
 }
 h1 {
