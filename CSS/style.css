@@ -1,8 +1,6 @@
 * {
-    font-family: Poppins;
-    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    list-style: none;
 }
 a {
     color: black;
@@ -12,117 +10,31 @@ a {
     background-image: url(../IMG/bg1.png);
     background-size: cover;
 }
-.a4border {
+.containerA4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panelA4 {
     width: 825px;
     height: 1350px;
-    margin: 0 auto;
     border-radius: 18px;
     box-shadow: 0 0 30px #0000003a;
     background-color: #ffffff;
     background-image: url(../IMG/paper-texture.png);
     background-size: cover;
-    position: relative;
-}
-h1 {
-    font-size: 23px;
-}
-h2 {
-    font-size: 14px;
-}
-#profile_photo {
-    position: static;
-    border-radius: 35%;
-    width: 110px;
-    transition: width 0.1s ease-in-out;
-}
-#profile_photo:hover {
-    width: 120px;
-}
-.youtube_video {
-    width: 360px;
-    height: 200px;
-}
-.footer {
-    text-align: center;
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-}
-.footerBox {
-    background-color: #F25757;
-    box-shadow: 0 0 10px #00000057;
-    border-radius: 15px;
-    width: 375px;
-    height: 20;
-    margin: 0 auto;
-    transition: transform 0.2s ease-in-out;
-}
-.footerBox:hover {
-    transform: translate(0,-3.5px);
-}
-.footerBox a {
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 13.5px;
-}
-.leftPanel {
-    height: 1350px;
-    width: 300px;
-    float: left;
-    position: relative;
-}
-.leftPanelChild {
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-}
-.leftPanelChild li {
-
-    top: 150px;
-    left: 0;
-    right: 0;
-}
-.rightPanel {
-    height: 1350px;
-    width: 525px;
-    position: relative;
-    float: right;
-}
-.rightPanelChild {
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-}
-.rightPanelChild h1 {
-    text-align: left;
-    font-size: 20px;
-    left: 10px;
-}
-/* .contact_button {
-
-} */
-.nomeInicio {
-    margin: 0 auto;
-}
-.descricaoAbout {
-    margin: -10px 0 30px 0;
+    margin: 10px;
 }
 #menu01 {
-    width: 68px;
-    height: 43px;
+    width: 70px;
+    height: 45px;
     background-color: #F25757;
     box-shadow: 0 0 10px #00000038;
     border-radius: 5px;
     display: inline-block;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     margin: 0 800px;
     position: fixed;
     line-height: 18px;
@@ -130,114 +42,231 @@ h2 {
     z-index: 1;
 }
 #menu01 h2 {
-    text-align: center;
     margin: 0 auto;
-    transform: translate(0,3px);
 }
 #menu01 a {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 #menu01:hover {
-    transform: translate(-5px);
+    transform: translate(-7px);
 }
-/* ////////TITULO ENTRE EM CONTATO */
-.contacth2 {
+.profile_photo {
+    width: 110px;
+    margin: 5px 0 0 0;
+    transform: scale(1);
+    border-radius: 35%;
+    transition: transform 0.3s ease-in-out;
+}
+.profile_photo:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.nameTitle {
+    margin: 15px 0 0 0;
+}
+.descTitle {
+    margin: 0 0 25px 0;
+    font-weight: 400;
+}
+.contactButton {
+    width: 100px;
+    height: 25px;
+    background-color: #F25757;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 auto;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #0000002a;
+    color: #ffffff;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.contactButton:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+.leftPanel {
+    height: 1350px;
+    width: 300px;
+    float: left;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: 35px auto;
+}
+.leftPanelChild h1 {
+    font-size: 20px;
+}
+.leftPanelChild h2 {
+    font-size: 20px;
+    margin: 0 auto;
+}
+.leftPanelChild h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+.leftPanelChild p {
+    font-size: 15px;
+}
+#menu02 {
+    margin: 0 0 30px 0;
+}
+#menu02 h3 {
+    margin: 0 auto;
+}
+.rightPanel {
+    height: 1350px;
+    width: 525px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 35px auto;
+}
+.rightPanelChild {
+    
+}
+.rightPanelChild h1 {
+    text-align: left;
+    font-size: 20px;
+}
+.rightPanelChild h2 {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+/* ///CONTATO.HTML */
+.contactTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contactTitle h2 {
+    font-size: 18px;
+    color: #ffffff;
     width: 220px;
     height: 30px;
-    font-size: 19px;
     background-color: #F25757;
-    border-radius: 4px;
-    color: #ffffff;
-    line-height: 30px;
-    z-index: 1;
     box-shadow: 0 0 8px #00000025;
+    border-radius: 4px;
+    z-index: 1;
 }
 .formPanel {
-    width: 750px;
-    height: 600px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 8px #00000025;
-    position: relative;
-    top: 25px;
-    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .formPanelChild {
-    position: relative;
+    width: 750px;
+    height: 620px;
+    margin: -30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #00000025;
+    z-index: 0;
 }
 .textForms {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: grid;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     margin: 40px auto;
 }
 .textForms input {
     border: none;
     border-radius: 5px;
-    box-shadow: inset 0 0 4px #0000003a;
+    box-shadow: inset 0 0 3px #0000005e;
+    background-color: #61e8e100;
     width: 320px;
     height: 25px;
-    margin: 2px auto;
 }
 .textForms textarea {
     border: none;
     border-radius: 5px;
-    box-shadow: inset 0 0 4px #0000003a;
+    box-shadow: inset 0 0 3px #0000005e;
+    background-color: #61e8e100;
     width: 320px;
     height: 55px;
-    margin: 3px auto;
 }
-.textForms p {
-    margin: 5px auto;
+.textForms label {
+    font-size: 15px;
+    margin: 6px 0 4px 0;
 }
 .selectForms {
-    position: absolute;
-    top: 275px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: -50px auto;
+}
+.selectForms label {
+    font-weight: 600;
+    font-size: 15px;
 }
 .selectForms li {
     margin: -2px 0 0 -40px;
-}
-.selectForms label {
-    width: 250px;
-    margin: -20px 0 0 43.5px;
-    text-align: left;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    font-weight: 300;
+    font-size: 15px;
+    list-style: none;
 }
 .ulCheckbox {
-    margin: 0 0 40px 0;
+    margin: 0 0 10px 0;
 }
-.form_button {
+.ulCheckbox ul {
+    margin: 0 0 0 -3px;
+}
+.ulRadio ul {
+    margin: 0 0 0 -4px;
+}
+.containerFormButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formButton {
     width: 230px;
     height: 38px;
+    font-size: 1rem;
     background-color: #F25757;
-    border: none;
+    ox-shadow: 0 0 10px #0000002a;
     border-radius: 5px;
+    border: none;
     font-weight: 600;
-    position: absolute;
-    top: 535px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-size: 17px;
-    box-shadow: 0 0 10px #0000002a;
     color: #ffffff;
+    margin: 45px auto;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
 }
-.form_button:hover {
+.formButton:hover {
     cursor: pointer;
+    transform: scale(1.06);
 }
 .selectForms label {
     font-weight: 600;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 7px;
+    background-color: #F25757;
+    box-shadow: 0 0 10px #00000057;
+    border-radius: 15px;
+    width: 375px;
+    height: 20;
+    transition: transform 0.2s ease-in-out;
+    position: fixed;
+}
+.footer:hover {
+    transform: translate(0,-5px);
+}
+.footer a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13.5px;
 }
