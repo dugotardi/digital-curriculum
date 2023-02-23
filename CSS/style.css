@@ -17,7 +17,7 @@ a {
 }
 .panelA4 {
     width: 825px;
-    height: 1350px;
+    height: fit-content;
     border-radius: 18px;
     box-shadow: 0 0 30px #0000003a;
     background-color: #fff5e5;
@@ -55,8 +55,8 @@ a {
     margin: 4px 0 0 0;
 }
 .leftPanel {
-    height: 1350px;
     width: 330px;
+    height: fit-content;
     float: left;
     display: flex;
     flex-direction: column;
@@ -68,30 +68,23 @@ a {
 .userProfilePanel {
     box-sizing: border-box;
     width: 290px;
-    height: 285px;
+    height: fit-content;
     background: linear-gradient(#fff5e5, #fff5e5) padding-box,
     linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
     border: 2px solid transparent;
     border-radius: 15px;
-}
-.userProfilePanel h1, h2, h3 {
-    color: #000000;
-    /* text-shadow: 0 0 3px #00000028; */
+    padding: 13px;
 }
 .userProfilePanel h1 {
     font-size: 24px;
     margin: 8px 0 0 0;
-}
-.userProfilePanel h2 {
-    font-size: 18.5px;
-    margin: 0 auto;
 }
 .userProfilePanel h3 {
     font-size: 15px;
     font-weight: 400;   
 }
 .descTitle {
-    margin: 0 0 15px 0;
+    margin: 0 auto;
 }
 .linksH3 h3 {
     margin: 0 auto;
@@ -99,7 +92,6 @@ a {
 }
 .profile_photo {
     width: 125px;
-    margin: 18px 0 0 0;
     transform: scale(1);
     border-radius: 35%;
     transition: transform 0.18s ease-in-out;
@@ -118,7 +110,7 @@ a {
     border: none;
     border-radius: 5px;
     font-weight: 600;
-    margin: 20px auto;
+    margin: 10px auto 0 auto;
     font-size: 1em;
     box-shadow: 0 0 5px #0000003a;
     color: #ffffff;
@@ -132,7 +124,7 @@ a {
 .aboutPanel {
     box-sizing: border-box;
     width: 290px;
-    height: 257px;
+    height: fit-content;
     background: linear-gradient(#fff5e5, #fff5e5) padding-box,
     linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
     border: 2px solid transparent;
@@ -144,26 +136,35 @@ a {
     font-size: 13px;
 }
 .textAbout01 {
-    margin: 5px auto;
+    margin: 0 auto;
 }
 .textAbout02 {
-    margin: -12px auto;
+    margin: -12px auto 0 auto;
 }
 .skillsPanel {
     display: flexbox;
-    flex-direction;
     justify-content: center;
     align-items: center;
     width: 290px;
-    height: 300px;
+    height: fit-content;
+    box-sizing: border-box;
     border-radius: 15px;
     background: linear-gradient(#fff5e5, #fff5e5) padding-box,
     linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
     border: 2px solid transparent;
+    padding: 13px;
+}
+.skillsPanelChildContainer {
+    margin: -25px 0 0 0;
+}
+.skillsPanelChild {
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px 95px;
 }
 .skillsPanel h1 {
     font-size: 24px;
-    margin: 10px 0 5px;
+    margin: 0 0 0 0;
 }
 .skillsPanel h2 {
     font-size: 13px;
@@ -180,8 +181,8 @@ a {
     margin: 0 auto;
 }
 .rightPanel {
-    height: 1350px;
     width: 495px;
+    height: fit-content;
     float: right;
     align-items: center;
     justify-content: center;
@@ -225,8 +226,8 @@ a {
 }
 .formPanelChild {
     width: 750px;
-    height: 620px;
-    margin: -30px auto;
+    height: fit-content;
+    margin: -30px auto 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 8px #00000025;
     z-index: 0;
@@ -236,23 +237,26 @@ a {
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 .textForms input {
     border: none;
     border-radius: 5px;
-    box-shadow: inset 0 0 3px #0000005e;
-    background-color: #61e8e100;
-    width: 320px;
+    box-shadow: inset 0 0 5px #0000003b;
+    background-color: #fffbf7;
+    width: 380px;
     height: 25px;
 }
 .textForms textarea {
+    width: 380px;
+    height: auto;
+    min-height: 75px;
+    max-height: 250px;
+    max-width: 380px;
     border: none;
     border-radius: 5px;
-    box-shadow: inset 0 0 3px #0000005e;
-    background-color: #61e8e100;
-    width: 320px;
-    height: 55px;
+    box-shadow: inset 0 0 5px #0000003b;
+    background-color: #fffbf7;
 }
 .textForms label {
     font-size: 15px;
@@ -299,14 +303,14 @@ a {
     border: none;
     font-weight: 600;
     color: #ffffff;
-    margin: 45px auto;
+    margin: 45px 0 13px 0;
     transform: scale(1);
     transform-origin: center;
     transition: transform 0.1s ease-in-out;
 }
 .formButton:hover {
     cursor: pointer;
-    transform: scale(1.03);
+    transform: scale(1.016);
 }
 .selectForms label {
     font-weight: 600;
@@ -316,17 +320,17 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: 7px;
+    bottom: 3.5px;
     background-color: #F25757;
-    box-shadow: 0 0 10px #00000057;
+    box-shadow: 0 0 10px 5px #ff004c31;
     border-radius: 15px;
     width: 410px;
-    height: 18px;
+    height: 16px;
     transition: transform 0.16s ease-in-out;
     position: fixed;
 }
 .footer:hover {
-    transform: translate(0,-3px);
+    transform: translate(0,-2px);
 }
 .footer a {
     color: #ffffff;
