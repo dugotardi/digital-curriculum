@@ -231,8 +231,8 @@ a {
                     margin: 2px 0 0 92px;
                 }
                 #pBOVFW02 {
-                    width: 155px;
-                    margin: 2px 0 0 87px;
+                    width: 125px;
+                    margin: 2px 0 0 117px;
                 }
                 #pBOVFW03 {
                     width: 185px;
@@ -281,7 +281,7 @@ a {
                     margin: -1px 0 0 70px;
                 }
                 #pBSB02 {
-                    margin: -1px 0 0 60px;
+                    margin: -1px 0 0 115px;
                 }
                 #pBSB03 {
                     margin: -1px 0 0 20px;
@@ -359,97 +359,94 @@ a {
     justify-content: center;
     align-items: center;
 }
-.formPanelChild {
-    width: 750px;
-    height: fit-content;
-    margin: -30px auto 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 8px #00000025;
-    z-index: 0;
-}
-.textForms {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    margin: 30px auto;
-}
-.textForms input {
-    border: none;
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #0000003b;
-    background-color: #fffbf7;
-    width: 380px;
-    height: 25px;
-}
-.textForms textarea {
-    width: 380px;
-    height: auto;
-    min-height: 75px;
-    max-height: 250px;
-    max-width: 380px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #0000003b;
-    background-color: #fffbf7;
-}
-.textForms label {
-    font-size: 15px;
-    margin: 6px 0 4px 0;
-}
-.selectForms {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    margin: -50px auto;
-}
-.selectForms label {
-    font-weight: 600;
-    font-size: 15px;
-}
-.selectForms li {
-    margin: -2px 0 0 -40px;
-    font-weight: 300;
-    font-size: 15px;
-    list-style: none;
-}
-.ulCheckbox {
-    margin: 15px 0 10px 0;
-}
-.ulCheckbox ul {
-    margin: 0 0 0 -3px;
-}
-.ulRadio ul {
-    margin: 0 0 0 -4px;
-}
-.containerFormButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.formButton {
-    width: 230px;
-    height: 38px;
-    font-size: 1rem;
-    background-color: #F25757;
-    box-shadow: 0 0 10px #0000002a;
-    border-radius: 5px;
-    border: none;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 45px 0 13px 0;
-    transform: scale(1);
-    transform-origin: center;
-    transition: transform 0.1s ease-in-out;
-}
-.formButton:hover {
-    cursor: pointer;
-    transform: scale(1.016);
-}
-.selectForms label {
-    font-weight: 600;
-}
+    .formPanelChild {
+        width: 750px;
+        height: fit-content;
+        margin: -30px auto 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px #00000025;
+        z-index: 0;
+    }
+    .textForms {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        margin: 30px auto;
+    }
+    .textForms input {
+        border: none;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #0000003b;
+        background-color: #fffbf7;
+        width: 380px;
+        height: 25px;
+    }
+    .textForms textarea {
+        width: 380px;
+        height: auto;
+        min-height: 75px;
+        max-height: 250px;
+        max-width: 380px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #0000003b;
+        background-color: #fffbf7;
+    }
+    .textForms label {
+        font-size: 15px;
+        margin: 6px 0 4px 0;
+    }
+    .selectForms {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin: -50px auto;
+    }
+    .selectForms label {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .selectForms li {
+        margin: -2px 0 0 -40px;
+        font-weight: 300;
+        font-size: 15px;
+        list-style: none;
+    }
+    .ulCheckbox {
+        margin: 15px 0 10px 0;
+    }
+    .ulCheckbox ul {
+        margin: 0 0 0 -3px;
+    }
+    .ulRadio ul {
+        margin: 0 0 0 -4px;
+    }
+        .containerFormButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .formButton {
+            width: 230px;
+            height: 38px;
+            font-size: 1rem;
+            background-color: #F25757;
+            box-shadow: 0 0 10px #0000002a;
+            border-radius: 5px;
+            border: none;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 45px 0 13px 0;
+            transform: scale(1);
+            transform-origin: center;
+            transition: transform 0.1s ease-in-out;
+        }
+        .formButton:hover {
+            cursor: pointer;
+            transform: scale(1.016);
+        }
 #footer {
     display: flex;
     align-items: center;
