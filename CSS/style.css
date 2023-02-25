@@ -34,7 +34,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 800px;
+    margin: 0 40%;
     position: fixed;
     line-height: 20px;
     transition: transform 0.1s ease-in-out;
