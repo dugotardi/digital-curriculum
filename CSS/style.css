@@ -1,5 +1,5 @@
 @media only screen and (max-width: 840px) {
-    .panelA4 {
+    .A4Panel {
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -32,12 +32,12 @@ a {
     background-image: url(../IMG/bg1.png);
     background-size: cover;
 }
-.containerA4 {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.panelA4 {
+.A4Panel {
     width: 825px;
     height: fit-content;
     border-radius: 18px;
@@ -74,7 +74,7 @@ a {
 #menu01:hover {
     transform: translate(-7px);
 }
-.menu01h2 {
+#menuH2 {
     margin: 4px 0 0 0;
 }
 .leftPanel {
@@ -492,51 +492,34 @@ a {
     width: 505px;
     height: fit-content;
     float: right;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin: 20px auto;
 }
-/* .rightPanelChild {
-    
-} */
-.rightPanelChild h1 {
-    text-align: left;
+.rightPanel h1 {
     font-size: 20px;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
-.rightPanelChild h2 {
-    text-align: left;
+.rightPanel h2 {
     font-size: 15px;
     font-weight: 300;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 .formationPanel {
-    padding: 10px 0 10px 0;
     height: fit-content;
-}
-.formationPanel h1 {
-    margin: 0 0 0 0;
 }
 .experiencePanel {
-    padding: 10px 0 10px 0;
     height: fit-content;
-}
-.experiencePanel h1 {
-    margin: 0 0 0 0;
 }
 .langPanel {
-    padding: 10px 0 10px 0;
     height: fit-content;
-}
-.langPanel h1 {
-    margin: 0 0 0 0;
 }
 .portifolioPanel {
-    padding: 10px 0 10px 0;
     height: fit-content;
-}
-.portifolioPanel h1 {
-    margin: 0 0 0 0;
 }
 /* ///CONTATO.HTML */
 .contactTitle {
@@ -616,7 +599,7 @@ a {
     list-style: none;
 }
 .ulCheckbox {
-    margin: 0 0 10px 0;
+    margin: 15px 0 10px 0;
 }
 .ulCheckbox ul {
     margin: 0 0 0 -3px;
