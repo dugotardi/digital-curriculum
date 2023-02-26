@@ -1,25 +1,3 @@
-/* @media only screen and (max-width: 922px) {
-    #A4Panel {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    #leftPanel {
-        width: 30%;
-        margin: 0 auto;
-        float: none;
-    }
-    #rightPanel {
-        box-sizing: border-box;
-        width: 70%;
-        margin: 0 auto;
-        padding: 20px;
-        float: none;
-    }
-    #menu {
-        right: -70%;
-    }
-} */
 @media only screen and (max-width: 425px) {
     #A4Panel {
         width: 350px;
@@ -65,17 +43,13 @@
         width: 350px;
     }
 }
-* {
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-}
 a {
+    text-decoration: none;
     color: black;
 }
 #bg {
-    background-color: #4cd1ca;
-    background-image: url(../IMG/bg1.png);
-    background-size: cover;
+    background: rgb(61,78,77);
+    background: radial-gradient(circle, rgb(77, 99, 97) 0%, rgb(22, 22, 22) 100%);
 }
 .container {
     display: flex;
@@ -89,7 +63,7 @@ a {
         box-shadow: 0 0 30px #0000003a;
         background-color: #fff5e5;
         background-size: cover;
-        margin: 5px 0 0 0;
+        margin: 0;
     }
         #menu {
             width: 80px;
@@ -98,28 +72,27 @@ a {
             box-shadow: 0 0 10px #00000038;
             border-radius: 5px;
             display: inline-block;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
             margin: 0 885px;
             position: fixed;
             line-height: 20px;
-            transition: transform 0.1s ease-in-out;
             z-index: 4;
+            transition: transform 0.1s ease-in-out;
         }
             #menu h2 {
-                margin: 0 auto;
+                text-align: center;
             }
             #menu a {
                 color: #ffffff;
+                text-shadow: 0 0 3px #00000085;
                 font-weight: 600;
                 font-size: 1rem;
+                font-family: 'Poppins', sans-serif;
             }
             #menu:hover {
                 transform: translate(-7px);
             }
             #menuText {
-                margin: 4px 0 0 0;
+                margin: 3px auto;
             }
         #leftPanel {
             width: 320px;
@@ -144,17 +117,18 @@ a {
                 color: #3b3b3b;
             }
             #userProfilePanel h1 {
+                font-family: 'Poppins', sans-serif;
                 font-size: 26px;
                 font-weight: 700;
                 margin: 0;
                 background-color: #3b3b3b;
                 border-radius: 4px;  
                 color: #fddb6a;
-                text-decoration: underline wavy #F25757;
             }
             #userProfilePanel h3 {
+                font-family: 'Roboto Mono', monospace;
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
             }
             #descTitle {
                 margin: 0 auto;
@@ -178,30 +152,29 @@ a {
                 background-color: #F25757;
                 border: none;
                 border-radius: 5px;
+                font-family: 'Roboto Mono', monospace;
                 font-weight: 600;
-                margin: 10px auto 0 auto;
                 font-size: 1em;
+                text-shadow: 0 0 3px #00000085;
+                margin: 10px auto 0 auto;
                 box-shadow: 0 0 5px #0000003a;
                 color: #ffffff;
                 transform: scale(1);
-                transition: transform 0.1s ease-in-out;
+                transition: transform 0.07s ease-in-out;
             }
             #contactButton:hover {
                 cursor: pointer;
                 transform: scale(1.05);
             }
             #aboutPanel {
-                margin: 15px auto;
+                margin: 15px 0 15px 0;
             }
             #aboutPanel h3 {
+                font-family: 'Roboto Mono', monospace;
                 font-size: 13px;
-                margin: 0 0 -10px 0;
-            }
-            #aboutText01 {
+                font-weight: 600;
+                line-height: 15px;
                 margin: 0 auto;
-            }
-            #aboutText02 {
-                margin: -12px auto 0 auto;
             }
             #skillsPanel {
                 display: flexbox;
@@ -215,13 +188,17 @@ a {
                 border: 4px solid transparent;
                 border-radius: 15px;
                 padding: 10px;
+                font-family: 'Roboto Mono', monospace;
                 color: #3b3b3b;
             }
                 #skillsPanel h1 {
+                    font-family: 'Roboto Mono', monospace;
+                    font-weight: 700;
                     font-size: 24px;
-                    margin: -7px 0 0 0;
+                    margin: -5px 0 0 0;
                 }
                 #skillsPanel h2 {
+                    font-family: 'Poppins', sans-serif;
                     font-size: 13px;
                     margin: 0 0 0 2px;
                     background-color: #3b3b3b;
@@ -234,7 +211,7 @@ a {
                     margin: 0;
                 }
                 #skillsPanelContainer {
-                    margin: -8px 0 0 0;
+                    margin: -5px 0 0 0;
                 }
                 .skillsPanelChild {
                     display: flex;
@@ -375,26 +352,32 @@ a {
             color: #3b3b3b;
         }
         #rightPanel h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 20px;
             margin: 0;
             padding: 0 0 10px 0;
         }
         #rightPanel h2 {
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             font-weight: 300;
             margin: 0;
             padding: 0;
         }
+        #rightPanel h3 {
+            font-family: 'Roboto Mono', monospace;
+        }
         #experiencePanel {
-
             height: fit-content;
+            margin: 0;
         }
         .experienceDiv {
             display: flex;
         }
         #experiencePanel h2 {
-            margin: 0;
+            margin: 0 0 5px 0;
             padding: 0;
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             width: fit-content;
             background-color: #3b3b3b;
@@ -404,12 +387,13 @@ a {
         #experiencePanel h3 {
             margin: 2.5px 0 12px 0;
             padding: 0;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             width: fit-content;
-            line-height: 15px;
+            line-height: 7px;
         }
         #experiencePanel a {
+            font-family: 'Poppins', sans-serif;
             text-decoration: none;
             background-color: #3b3b3b;
             border-radius: 4px;
@@ -417,10 +401,11 @@ a {
         }
         .experienceLink {
             width: fit-content;
+            transition: transform 0.1s ease-in-out;
         }
         .experienceLink:hover {
             transform: translate(5px, 0);
-            transition: transform 0.2s ease-in-out;
+            
         }
         #formationPanel {
             display: flex;
@@ -440,37 +425,40 @@ a {
             color: #fddb6a;
         }
         #formationPanel h3 {
-            margin: 2.5px 0 12px 0;
+            margin: 3px 0 12px 0;
             padding: 0;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             width: fit-content;
             line-height: 15px;
         }
+        #containerBottom {
+            display: flex;
+        }
+        #langPanel h1 {
+            margin: 0;
+            padding: 0;
+        }
         #containerLangPanel {
             display: flex;
-            /* flex-direction: column; */
             justify-content: space-around;
             height: fit-content;
-            margin: -10px 0 0 0;
         }
         #containerLangPanel h2 {
-            font-size: 13px;
+            font-size: 14px;
             width: fit-content;
             background-color: #3b3b3b;
             border-radius: 1px;
             font-weight: 800;
         }
             .flags {
-                width: 50px;
+                width: 60px;
                 margin: 0;
             }
         #ptBR, #en, #es {
-            width: 120px;
-            margin: 0;
+            width: 100px;
         }
             #ptBRText01, #enText01, #esText01 {
-                margin: -15px 0 0 0;
                 color: #fff5e7;
             }
             #ptBRText02, #enText02, #esText02 {
@@ -478,17 +466,14 @@ a {
             }
         #portifolioPanel {
             height: fit-content;
-            margin: 15px 0 0 0;
+            margin: 0;
         }
         #contactTitle {
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
         }
-        #contactTitle h2 {
-            font-size: 18px;
-            color: #ffffff;
+        #contactSection {
             width: 220px;
             height: 30px;
             background-color: #F25757;
@@ -496,6 +481,14 @@ a {
             border-radius: 4px;
             margin: 10px 0 0 0;
             z-index: 1;
+        }
+        #contactTitle h2 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 3px #00000085;
+            margin: 2px 0 0 0;
         }
         .formPanel {
             width: 750px;
@@ -510,6 +503,7 @@ a {
                 align-items: center;
                 justify-content: center;
                 font-weight: 600;
+                font-family: 'Roboto Mono', monospace;
                 margin: 30px auto;
             }
             .textForms input {
@@ -532,10 +526,12 @@ a {
                 background-color: #fffbf7;
             }
             .textForms label {
+
                 font-size: 15px;
                 margin: 6px 0 4px 0;
             }
             .selectForms {
+                font-family: 'Roboto Mono', monospace;
                 display: grid;
                 align-items: center;
                 justify-content: center;
@@ -555,28 +551,37 @@ a {
             .ulCheckbox {
                 margin: 15px 0 10px 0;
             }
+            .ulCheckbox input::checkbox {
+                margin: -25px;
+            }
             .ulCheckbox ul {
                 margin: 0 0 0 -3px;
             }
             .ulRadio ul {
                 margin: 0 0 0 -4px;
             }
-            .formButton {
+            #formButton {
                 width: 230px;
                 height: 38px;
-                font-size: 1rem;
                 background-color: #F25757;
                 box-shadow: 0 0 10px #0000002a;
                 border-radius: 5px;
                 border: none;
-                font-weight: 600;
-                color: #ffffff;
-                margin: 45px 0 13px 0;
+                margin: 45px 0 15px 0;
                 transform: scale(1);
                 transform-origin: center;
                 transition: transform 0.1s ease-in-out;
             }
-            .formButton:hover {
+            #formButton h2 {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #ffffff;
+                text-align: center;
+                margin: -3px 0 0 0;
+                text-shadow: 0 0 3px #00000085;
+            }
+            #formButton:hover {
                 cursor: pointer;
                 transform: scale(1.016);
             }
@@ -598,16 +603,16 @@ a {
         margin: 0;
         padding: 0;
         color: #3b3b3b;
-    }
-    #aboutTitle h2 {
-        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
         font-weight: 700;
         text-align: left;
+    }
+    #aboutTitle h2 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 22px;
     }
     #aboutTitle h1 {
         font-size: 50px;
-        font-weight: 700;
-        text-align: left;
         margin: -15px 0 0 0;
     }
     #aboutText {
@@ -618,6 +623,7 @@ a {
     }
     #aboutText h3 {
         width: fit-content;
+        font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 25px;
         color: #3b3b3b;
@@ -635,12 +641,13 @@ a {
         margin: 40px;
     }
     #aboutLinks h2 {
+        font-family: 'Roboto Mono', monospace;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 18px;
         color: #3b3b3b;
     }
     #socialLinks {
-        margin: 22px auto;
+        margin: 15px;
     }
     .socialIMG {
         width: 50px;
@@ -671,7 +678,9 @@ a {
     transform: translate(0,-2px);
 }
 #footer a {
+    font-family: 'Roboto Mono', monospace;
     color: #ffffff;
+    text-shadow: 0 0 3px #00000085;
     width: 410px;
     font-weight: 600;
     font-size: 0.85rem;
