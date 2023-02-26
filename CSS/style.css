@@ -73,7 +73,7 @@ a {
     color: black;
 }
 #bg {
-    background-color: #61E8E1;
+    background-color: #4cd1ca;
     background-image: url(../IMG/bg1.png);
     background-size: cover;
 }
@@ -147,7 +147,8 @@ a {
                 font-size: 26px;
                 font-weight: 700;
                 margin: 0;
-                background-color: #3b3b3b;   
+                background-color: #3b3b3b;
+                border-radius: 4px;  
                 color: #fddb6a;
                 text-decoration: underline wavy #F25757;
             }
@@ -194,6 +195,7 @@ a {
             }
             #aboutPanel h3 {
                 font-size: 13px;
+                margin: 0 0 -10px 0;
             }
             #aboutText01 {
                 margin: 0 auto;
@@ -209,7 +211,7 @@ a {
                 width: 280px;
                 height: fit-content;
                 background: linear-gradient(#fff5e5, #fff5e5) padding-box,
-                linear-gradient(to right, rgba(197, 166, 27, 0.3), rgb(59,59,59,0.4)) border-box;
+                linear-gradient(to right, rgba(197, 166, 27, 0.2), rgb(59,59,59,0.2)) border-box;
                 border: 4px solid transparent;
                 border-radius: 15px;
                 padding: 10px;
@@ -221,24 +223,23 @@ a {
                 }
                 #skillsPanel h2 {
                     font-size: 13px;
-                    margin: 0 0 0 5px;
+                    margin: 0 0 0 2px;
+                    background-color: #3b3b3b;
+                    border-radius: 4px;
+                    color: #ffe572;
                 }
                 #skillsPanel img {
-                    width: 22px;
-                    height: 22px;
+                    width: 20px;
+                    height: 20px;
                     margin: 0;
                 }
                 #skillsPanelContainer {
-                    margin: -10px 0 0 0;
+                    margin: -8px 0 0 0;
                 }
                 .skillsPanelChild {
                     display: flex;
                     align-items: center;
                     margin: 0 0 0 5px;
-                }
-                .skillsPanelChild h2 {
-                    background-color: #3b3b3b;
-                    color: #ffe572;
                 }
                 .progressBarContainer {
                     display: flex;
@@ -250,7 +251,7 @@ a {
                     height: 13px;
                     border-radius: 7px;
                     background: linear-gradient(#fff5e5, #fff5e5) padding-box,
-                    linear-gradient(to right, rgba(59, 59, 59, 0.7), rgba(236, 197, 21, 0.6)) border-box;
+                    linear-gradient(to right, rgba(59, 59, 59, 0.4), rgba(236, 197, 21, 0.4)) border-box;
                     border: 2px solid transparent;
                     margin: 0 0 0 5px;
                     position: relative;
@@ -308,6 +309,10 @@ a {
                         width: 155px;
                         margin: 2px 0 0 87px;
                     }
+                    #pBOVFW10 {
+                        width: 35px;
+                        margin: 2px 0 0 207px;
+                    }
                 .pBSliderButton {
                     width: 43px;
                     height: 18px;
@@ -316,7 +321,7 @@ a {
                     justify-content: center;
                     text-align: center;
                     background-color: #F25757;
-                    box-shadow: 0 0 12px 1px #00000033;
+                    box-shadow: 0 0 10px 1px #f257579c;
                     border-radius: 7px;
                     font-weight: 700;
                     color: #fff5e5;
@@ -350,6 +355,12 @@ a {
                     #pBSB09 {
                         margin: -1px 0 0 50px;
                     }
+                    #pBSB10 {
+                        margin: -1px 0 0 197px;
+                    }
+                #souproplayer {
+                    margin: -5px 0 0 0;
+                }
         #rightPanel {
             width: 585px;
             height: fit-content;
@@ -374,6 +385,43 @@ a {
             margin: 0;
             padding: 0;
         }
+        #experiencePanel {
+
+            height: fit-content;
+        }
+        .experienceDiv {
+            display: flex;
+        }
+        #experiencePanel h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            width: fit-content;
+            background-color: #3b3b3b;
+            border-radius: 4px;
+            color: #fddb6a;
+        }
+        #experiencePanel h3 {
+            margin: 2.5px 0 12px 0;
+            padding: 0;
+            font-size: 15px;
+            font-weight: 600;
+            width: fit-content;
+            line-height: 15px;
+        }
+        #experiencePanel a {
+            text-decoration: none;
+            background-color: #3b3b3b;
+            border-radius: 4px;
+            color: #fddb6a;
+        }
+        .experienceLink {
+            width: fit-content;
+        }
+        .experienceLink:hover {
+            transform: translate(5px, 0);
+            transition: transform 0.2s ease-in-out;
+        }
         #formationPanel {
             display: flex;
             flex-direction: column;
@@ -388,87 +436,50 @@ a {
             font-size: 15px;
             width: fit-content;
             background-color: #3b3b3b;
+            border-radius: 4px;
             color: #fddb6a;
         }
         #formationPanel h3 {
-            margin: 4px 0 10px 0;
+            margin: 2.5px 0 12px 0;
             padding: 0;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 15px;
+            font-weight: 600;
             width: fit-content;
-            line-height: 18px;
-        }
-        #experiencePanel {
-            height: fit-content;
+            line-height: 15px;
         }
         #containerLangPanel {
             display: flex;
+            /* flex-direction: column; */
             justify-content: space-around;
             height: fit-content;
             margin: -10px 0 0 0;
         }
-        #containerLangPanel h3 {
-            font-weight: 800;
+        #containerLangPanel h2 {
             font-size: 13px;
-            margin: -14px 0 0 0;
+            width: fit-content;
+            background-color: #3b3b3b;
+            border-radius: 1px;
+            font-weight: 800;
         }
             .flags {
-                width: 55px;
+                width: 50px;
                 margin: 0;
             }
-        #ptBR {
+        #ptBR, #en, #es {
             width: 120px;
             margin: 0;
         }
-        #en {
-            width: 120px;
-            margin: 0;
-        }
-        #es {
-            width: 120px;
-            margin: 0;
-        }
-            #ptBRText01 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #F25757;
+            #ptBRText01, #enText01, #esText01 {
+                margin: -15px 0 0 0;
+                color: #fff5e7;
             }
-            #ptBRText02 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #fddb6a;
-            }
-            #enText01 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #F25757;
-            }
-            #enText02 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #fddb6a;
-            }
-            #esText01 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #F25757;
-            }
-            #esText02 {
-                width: fit-content;
-                font-weight: 800;
-                background-color: #3b3b3b;
-                color: #cfe2e2;
+            #ptBRText02, #enText02, #esText02 {
+                color: #ff8873;
             }
         #portifolioPanel {
             height: fit-content;
             margin: 15px 0 0 0;
         }
-        /* ///CONTATO.HTML */
         #contactTitle {
             display: flex;
             align-items: center;
@@ -494,81 +505,81 @@ a {
             box-shadow: 0 0 8px #00000025;
             z-index: 0;
         }
-        .textForms {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            margin: 30px auto;
-        }
-        .textForms input {
-            border: none;
-            border-radius: 5px;
-            box-shadow: inset 0 0 5px #0000003b;
-            background-color: #fffbf7;
-            width: 380px;
-            height: 25px;
-        }
-        .textForms textarea {
-            width: 380px;
-            height: auto;
-            min-height: 75px;
-            max-height: 250px;
-            max-width: 380px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: inset 0 0 5px #0000003b;
-            background-color: #fffbf7;
-        }
-        .textForms label {
-            font-size: 15px;
-            margin: 6px 0 4px 0;
-        }
-        .selectForms {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            margin: -50px auto;
-        }
-        .selectForms label {
-            font-weight: 600;
-            font-size: 15px;
-        }
-        .selectForms li {
-            margin: -2px 0 0 -40px;
-            font-weight: 300;
-            font-size: 15px;
-            list-style: none;
-        }
-        .ulCheckbox {
-            margin: 15px 0 10px 0;
-        }
-        .ulCheckbox ul {
-            margin: 0 0 0 -3px;
-        }
-        .ulRadio ul {
-            margin: 0 0 0 -4px;
-        }
-        .formButton {
-            width: 230px;
-            height: 38px;
-            font-size: 1rem;
-            background-color: #F25757;
-            box-shadow: 0 0 10px #0000002a;
-            border-radius: 5px;
-            border: none;
-            font-weight: 600;
-            color: #ffffff;
-            margin: 45px 0 13px 0;
-            transform: scale(1);
-            transform-origin: center;
-            transition: transform 0.1s ease-in-out;
-        }
-        .formButton:hover {
-            cursor: pointer;
-            transform: scale(1.016);
-        }
+            .textForms {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                margin: 30px auto;
+            }
+            .textForms input {
+                border: none;
+                border-radius: 5px;
+                box-shadow: inset 0 0 5px #0000003b;
+                background-color: #fffbf7;
+                width: 380px;
+                height: 25px;
+            }
+            .textForms textarea {
+                width: 380px;
+                height: auto;
+                min-height: 75px;
+                max-height: 250px;
+                max-width: 380px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: inset 0 0 5px #0000003b;
+                background-color: #fffbf7;
+            }
+            .textForms label {
+                font-size: 15px;
+                margin: 6px 0 4px 0;
+            }
+            .selectForms {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                margin: -50px auto;
+            }
+            .selectForms label {
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .selectForms li {
+                margin: -2px 0 0 -40px;
+                font-weight: 300;
+                font-size: 15px;
+                list-style: none;
+            }
+            .ulCheckbox {
+                margin: 15px 0 10px 0;
+            }
+            .ulCheckbox ul {
+                margin: 0 0 0 -3px;
+            }
+            .ulRadio ul {
+                margin: 0 0 0 -4px;
+            }
+            .formButton {
+                width: 230px;
+                height: 38px;
+                font-size: 1rem;
+                background-color: #F25757;
+                box-shadow: 0 0 10px #0000002a;
+                border-radius: 5px;
+                border: none;
+                font-weight: 600;
+                color: #ffffff;
+                margin: 45px 0 13px 0;
+                transform: scale(1);
+                transform-origin: center;
+                transition: transform 0.1s ease-in-out;
+            }
+            .formButton:hover {
+                cursor: pointer;
+                transform: scale(1.016);
+            }
     #aboutTitle {
         box-sizing: border-box;
         width: fit-content;
@@ -629,18 +640,16 @@ a {
         color: #3b3b3b;
     }
     #socialLinks {
-        margin: 22px;
+        margin: 22px auto;
     }
-    #socialLinks img {
+    .socialIMG {
+        width: 50px;
         border-radius: 15%;
+        transition: transform 0.15s ease-in-out;
+        margin: 0 7px 0 7px;
     }
-    #githubLink {
-        width: 50px;
-        margin: 0 10px 0 10px;
-    }
-    #linkedinLink {
-        width: 50px;
-        margin: 0 10px 0 10px;
+    .socialIMG:hover {
+        transform: translate(0, 6px);
     }
 
 #footer {
