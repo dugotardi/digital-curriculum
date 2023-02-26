@@ -63,20 +63,20 @@ a {
             transition: transform 0.1s ease-in-out;
             z-index: 4;
         }
-        #menu h2 {
-            margin: 0 auto;
-        }
-        #menu a {
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        #menu:hover {
-            transform: translate(-7px);
-        }
-        #menuText {
-            margin: 4px 0 0 0;
-        }
+            #menu h2 {
+                margin: 0 auto;
+            }
+            #menu a {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            #menu:hover {
+                transform: translate(-7px);
+            }
+            #menuText {
+                margin: 4px 0 0 0;
+            }
         #leftPanel {
             width: 320px;
             height: fit-content;
@@ -88,15 +88,16 @@ a {
             text-align: center;
             margin: 20px auto;
         }
-            #userProfilePanel {
+            .leftPanelFX {
                 box-sizing: border-box;
                 width: 280px;
                 height: fit-content;
                 background: linear-gradient(#fff5e5, #fff5e5) padding-box,
                 linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
-                border: 2px solid transparent;
+                border: 4px solid transparent;
                 border-radius: 15px;
-                padding: 10px;
+                padding: 15px;
+                color: #3b3b3b;
             }
             #userProfilePanel h1 {
                 font-size: 24px;
@@ -141,14 +142,6 @@ a {
                 transform: scale(1.05);
             }
             #aboutPanel {
-                box-sizing: border-box;
-                width: 280px;
-                height: fit-content;
-                background: linear-gradient(#fff5e5, #fff5e5) padding-box,
-                linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
-                border: 2px solid transparent;
-                border-radius: 15px;
-                padding: 25px;
                 margin: 15px auto;
             }
             #aboutPanel h3 {
@@ -164,14 +157,6 @@ a {
                 display: flexbox;
                 justify-content: center;
                 align-items: center;
-                width: 280px;
-                height: fit-content;
-                box-sizing: border-box;
-                border-radius: 15px;
-                background: linear-gradient(#fff5e5, #fff5e5) padding-box,
-                linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
-                border: 2px solid transparent;
-                padding: 15px;
             }
             #skillsPanel h1 {
                 font-size: 24px;
@@ -313,6 +298,7 @@ a {
             justify-content: center;
             text-align: left;
             margin: 20px auto;
+            color: #3b3b3b;
         }
         #rightPanel h1 {
             font-size: 20px;
@@ -337,96 +323,87 @@ a {
         #portifolioPanel {
             height: fit-content;
         }
-/* ///CONTATO.HTML */
-#contactTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-#contactTitle h2 {
-    font-size: 18px;
-    color: #ffffff;
-    width: 220px;
-    height: 30px;
-    background-color: #F25757;
-    box-shadow: 0 0 8px #00000025;
-    border-radius: 4px;
-    z-index: 1;
-}
-.formPanel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    .formPanelChild {
-        width: 750px;
-        height: fit-content;
-        margin: -30px auto 0 auto;
-        border-radius: 10px;
-        box-shadow: 0 0 8px #00000025;
-        z-index: 0;
-    }
-    .textForms {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        margin: 30px auto;
-    }
-    .textForms input {
-        border: none;
-        border-radius: 5px;
-        box-shadow: inset 0 0 5px #0000003b;
-        background-color: #fffbf7;
-        width: 380px;
-        height: 25px;
-    }
-    .textForms textarea {
-        width: 380px;
-        height: auto;
-        min-height: 75px;
-        max-height: 250px;
-        max-width: 380px;
-        border: none;
-        border-radius: 5px;
-        box-shadow: inset 0 0 5px #0000003b;
-        background-color: #fffbf7;
-    }
-    .textForms label {
-        font-size: 15px;
-        margin: 6px 0 4px 0;
-    }
-    .selectForms {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-        margin: -50px auto;
-    }
-    .selectForms label {
-        font-weight: 600;
-        font-size: 15px;
-    }
-    .selectForms li {
-        margin: -2px 0 0 -40px;
-        font-weight: 300;
-        font-size: 15px;
-        list-style: none;
-    }
-    .ulCheckbox {
-        margin: 15px 0 10px 0;
-    }
-    .ulCheckbox ul {
-        margin: 0 0 0 -3px;
-    }
-    .ulRadio ul {
-        margin: 0 0 0 -4px;
-    }
-        .containerFormButton {
+        /* ///CONTATO.HTML */
+        #contactTitle {
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
+        }
+        #contactTitle h2 {
+            font-size: 18px;
+            color: #ffffff;
+            width: 220px;
+            height: 30px;
+            background-color: #F25757;
+            box-shadow: 0 0 8px #00000025;
+            border-radius: 4px;
+            margin: 10px 0 0 0;
+            z-index: 1;
+        }
+        .formPanel {
+            width: 750px;
+            height: fit-content;
+            margin: -20px 0 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #00000025;
+            z-index: 0;
+        }
+        .textForms {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 30px auto;
+        }
+        .textForms input {
+            border: none;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px #0000003b;
+            background-color: #fffbf7;
+            width: 380px;
+            height: 25px;
+        }
+        .textForms textarea {
+            width: 380px;
+            height: auto;
+            min-height: 75px;
+            max-height: 250px;
+            max-width: 380px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px #0000003b;
+            background-color: #fffbf7;
+        }
+        .textForms label {
+            font-size: 15px;
+            margin: 6px 0 4px 0;
+        }
+        .selectForms {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin: -50px auto;
+        }
+        .selectForms label {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .selectForms li {
+            margin: -2px 0 0 -40px;
+            font-weight: 300;
+            font-size: 15px;
+            list-style: none;
+        }
+        .ulCheckbox {
+            margin: 15px 0 10px 0;
+        }
+        .ulCheckbox ul {
+            margin: 0 0 0 -3px;
+        }
+        .ulRadio ul {
+            margin: 0 0 0 -4px;
         }
         .formButton {
             width: 230px;
@@ -447,6 +424,77 @@ a {
             cursor: pointer;
             transform: scale(1.016);
         }
+    #aboutTitle {
+        box-sizing: border-box;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(#fff5e5, #fff5e5) padding-box,
+        linear-gradient(to right, rgb(242,87,87,0.3), rgb(45,192,253,0.3)) border-box;
+        border: 7px solid transparent;
+        border-radius: 15px;
+        padding: 50px 25px 40px 25px;
+        margin: 25px auto;
+    }
+    #aboutTitle h1, h2 {
+        margin: 0;
+        padding: 0;
+        color: #3b3b3b;
+    }
+    #aboutTitle h2 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+    #aboutTitle h1 {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: left;
+        margin: -15px 0 0 0;
+    }
+    #aboutText {
+        box-sizing: border-box;
+        padding: 0 65px 0 65px;
+        margin: 0;
+    }
+    #aboutText h3 {
+        font-weight: 600;
+        font-size: 25px;
+        color: #3b3b3b;
+        line-height: 50px;
+    }
+    .aboutTextIMG {
+        width: 25px;
+    }
+    #aboutLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+    }
+    #aboutLinks h2 {
+        font-weight: 600;
+        font-size: 22px;
+        color: #3b3b3b;
+    }
+    #socialLinks {
+        margin: 22px;
+    }
+    #socialLinks img {
+        border-radius: 15%;
+    }
+    #githubLink {
+        width: 50px;
+        margin: 0 10px 0 10px;
+    }
+    #linkedinLink {
+        width: 50px;
+        margin: 0 10px 0 10px;
+    }
+
 #footer {
     display: flex;
     align-items: center;
