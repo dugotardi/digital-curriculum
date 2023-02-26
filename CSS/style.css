@@ -144,12 +144,16 @@ a {
                 color: #3b3b3b;
             }
             #userProfilePanel h1 {
-                font-size: 24px;
+                font-size: 26px;
+                font-weight: 700;
                 margin: 0;
+                background-color: #3b3b3b;   
+                color: #fddb6a;
+                text-decoration: underline wavy #F25757;
             }
             #userProfilePanel h3 {
                 font-size: 15px;
-                font-weight: 400;   
+                font-weight: 400;
             }
             #descTitle {
                 margin: 0 auto;
@@ -201,6 +205,15 @@ a {
                 display: flexbox;
                 justify-content: center;
                 align-items: center;
+                box-sizing: border-box;
+                width: 280px;
+                height: fit-content;
+                background: linear-gradient(#fff5e5, #fff5e5) padding-box,
+                linear-gradient(to right, rgba(197, 166, 27, 0.3), rgb(59,59,59,0.4)) border-box;
+                border: 4px solid transparent;
+                border-radius: 15px;
+                padding: 10px;
+                color: #3b3b3b;
             }
                 #skillsPanel h1 {
                     font-size: 24px;
@@ -288,15 +301,15 @@ a {
                         margin: 2px 0 0 157px;
                     }
                     #pBOVFW08 {
-                        width: 55px;
-                        margin: 2px 0 0 187px;
+                        width: 60px;
+                        margin: 2px 0 0 182px;
                     }
                     #pBOVFW09 {
                         width: 155px;
                         margin: 2px 0 0 87px;
                     }
                 .pBSliderButton {
-                    width: 50px;
+                    width: 43px;
                     height: 18px;
                     display: flex;
                     align-items: center;
@@ -587,15 +600,18 @@ a {
         margin: -15px 0 0 0;
     }
     #aboutText {
+        width: fit-content;
         box-sizing: border-box;
         padding: 0 65px 0 65px;
-        margin: 0;
+        margin: 0 auto;
     }
     #aboutText h3 {
+        width: fit-content;
         font-weight: 600;
         font-size: 25px;
         color: #3b3b3b;
         line-height: 50px;
+        margin: 0;
     }
     .aboutTextIMG {
         width: 25px;
