@@ -1,8 +1,32 @@
-@media only screen and (max-width: 840px) {
+/* @media only screen and (max-width: 922px) {
     #A4Panel {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column;
+    }
+    #leftPanel {
+        width: 30%;
+        margin: 0 auto;
+        float: none;
+    }
+    #rightPanel {
+        box-sizing: border-box;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        float: none;
+    }
+    #menu {
+        right: -70%;
+    }
+} */
+@media only screen and (max-width: 425px) {
+    #A4Panel {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #leftPanel {
         width: 350px;
@@ -13,11 +37,32 @@
         box-sizing: border-box;
         width: 350px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 10px 0 0;
         float: none;
     }
+    #experiencePanel {
+        margin: 0 auto;
+        width: 350px;
+    }
+    #formationPanel {
+        margin: 0 auto;
+        width: 350px;
+    }
+    #langPanel {
+        margin: 0 auto;
+        width: 350px;
+    }
+    #portifolioPanel {
+        margin: 0 auto;
+        width: 350px;
+    }
     #menu {
-        right: -95%;
+        position: absolute;
+        left: -100%;
+        margin: 0;
+    }
+    #footer {
+        width: 350px;
     }
 }
 * {
@@ -38,7 +83,7 @@ a {
     justify-content: center;
 }
     #A4Panel {
-        width: 825px;
+        width: 905px;
         height: fit-content;
         border-radius: 18px;
         box-shadow: 0 0 30px #0000003a;
@@ -56,8 +101,7 @@ a {
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin: 0 795px;
-            /* right: 90%; */
+            margin: 0 885px;
             position: fixed;
             line-height: 20px;
             transition: transform 0.1s ease-in-out;
@@ -101,7 +145,7 @@ a {
             }
             #userProfilePanel h1 {
                 font-size: 24px;
-                margin: 8px 0 0 0;
+                margin: 0;
             }
             #userProfilePanel h3 {
                 font-size: 15px;
@@ -158,146 +202,152 @@ a {
                 justify-content: center;
                 align-items: center;
             }
-            #skillsPanel h1 {
-                font-size: 24px;
-                margin: 0 0 0 0;
-            }
-            #skillsPanel h2 {
-                font-size: 13px;
-                margin: 0 0 0 0;
-            }
-            #skillsPanel img {
-                width: 24px;
-                margin: 0 0 0 0;
-            }
-            #skillsPanelContainer {
-                margin: -50px 0 0 0;
-            }
-            .skillsPanelChild {
-                display: flex;
-                align-items: center;
-                margin: 0 0 0 5px;
-            }
-            .progressBarContainer {
-                margin: 2px 0 7px 0;
-                display: flex;
-                flex-direction: column;
-                margin: 1.5px 0 5px 0;
-            }
-            .progressBarBorder {
-                width: 235px;
-                height: 13px;
-                border-radius: 15px;
-                background: linear-gradient(#fff5e5, #fff5e5) padding-box,
-                linear-gradient(to right, rgba(52, 140, 255, 0.3), rgba(255, 102, 0, 0.3)) border-box;
-                border: 2px solid transparent;
-                margin: 0 0 0 5px;
-                position: relative;
-            }
-            .progressBarMAIN {
-                width: 235px;
-                height: 13px;
-                border-radius: 15px;
-                background: linear-gradient(to right, rgba(0, 174, 255, 0.55) 0%, rgba(255, 0, 0, 0.55) 100%);
-                margin: 2px 0 0 7.45px;
-                position: absolute;
-                z-index: 1;
-            }
-            .progressBarOVERFLOW {
-                height: 13px;
-                border-radius: 15px;
-                background-color: #fff5e5;
-                margin: 2px 0 0 7.45px;
-                position: absolute;
-                z-index: 2;
-            }
-                #pBOVFW01 {
-                    width: 150px;
-                    margin: 2px 0 0 92px;
+                #skillsPanel h1 {
+                    font-size: 24px;
+                    margin: -7px 0 0 0;
                 }
-                #pBOVFW02 {
-                    width: 125px;
-                    margin: 2px 0 0 117px;
+                #skillsPanel h2 {
+                    font-size: 13px;
+                    margin: 0 0 0 5px;
                 }
-                #pBOVFW03 {
-                    width: 185px;
-                    margin: 2px 0 0 57px;
+                #skillsPanel img {
+                    width: 22px;
+                    height: 22px;
+                    margin: 0;
                 }
-                #pBOVFW04 {
-                    width: 35px;
-                    margin: 2px 0 0 207px;
+                #skillsPanelContainer {
+                    margin: -10px 0 0 0;
                 }
-                #pBOVFW05 {
-                    width: 35px;
-                    margin: 2px 0 0 207px;
+                .skillsPanelChild {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 0 5px;
                 }
-                #pBOVFW06 {
-                    width: 55px;
-                    margin: 2px 0 0 187px;
+                .skillsPanelChild h2 {
+                    background-color: #3b3b3b;
+                    color: #ffe572;
                 }
-                #pBOVFW07 {
-                    width: 85px;
-                    margin: 2px 0 0 157px;
+                .progressBarContainer {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2.5px 0 5.5px 0;
                 }
-                #pBOVFW08 {
-                    width: 55px;
-                    margin: 2px 0 0 187px;
+                .progressBarBorder {
+                    width: 235px;
+                    height: 13px;
+                    border-radius: 7px;
+                    background: linear-gradient(#fff5e5, #fff5e5) padding-box,
+                    linear-gradient(to right, rgba(59, 59, 59, 0.7), rgba(236, 197, 21, 0.6)) border-box;
+                    border: 2px solid transparent;
+                    margin: 0 0 0 5px;
+                    position: relative;
                 }
-                #pBOVFW09 {
-                    width: 155px;
-                    margin: 2px 0 0 87px;
+                .progressBarMAIN {
+                    width: 235px;
+                    height: 13px;
+                    border-radius: 5px;
+                    background: linear-gradient(to right, rgba(59, 59, 59, 0.55) 0%, rgba(255, 229, 114, 0.55) 100%);
+                    margin: 2px 0 0 7.45px;
+                    position: absolute;
+                    z-index: 1;
                 }
-            .pBSliderButton {
-                width: 50px;
-                height: 18.5px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                background-color: #F25757;
-                box-shadow: 0 0 15px 1px #0000002a;
-                border-radius: 20px;
-                font-weight: 700;
-                color: #fff5e5;
-                position: absolute;
-                z-index: 3;
-            }
-                #pBSB01 {
-                    margin: -1px 0 0 70px;
+                .progressBarOVERFLOW {
+                    height: 13px;
+                    border-radius: 5px;
+                    background-color: #fff5e5;
+                    margin: 2px 0 0 7.45px;
+                    position: absolute;
+                    z-index: 2;
                 }
-                #pBSB02 {
-                    margin: -1px 0 0 115px;
+                    #pBOVFW01 {
+                        width: 150px;
+                        margin: 2px 0 0 92px;
+                    }
+                    #pBOVFW02 {
+                        width: 125px;
+                        margin: 2px 0 0 117px;
+                    }
+                    #pBOVFW03 {
+                        width: 185px;
+                        margin: 2px 0 0 57px;
+                    }
+                    #pBOVFW04 {
+                        width: 35px;
+                        margin: 2px 0 0 207px;
+                    }
+                    #pBOVFW05 {
+                        width: 35px;
+                        margin: 2px 0 0 207px;
+                    }
+                    #pBOVFW06 {
+                        width: 55px;
+                        margin: 2px 0 0 187px;
+                    }
+                    #pBOVFW07 {
+                        width: 85px;
+                        margin: 2px 0 0 157px;
+                    }
+                    #pBOVFW08 {
+                        width: 55px;
+                        margin: 2px 0 0 187px;
+                    }
+                    #pBOVFW09 {
+                        width: 155px;
+                        margin: 2px 0 0 87px;
+                    }
+                .pBSliderButton {
+                    width: 50px;
+                    height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    background-color: #F25757;
+                    box-shadow: 0 0 12px 1px #00000033;
+                    border-radius: 7px;
+                    font-weight: 700;
+                    color: #fff5e5;
+                    position: absolute;
+                    z-index: 3;
                 }
-                #pBSB03 {
-                    margin: -1px 0 0 20px;
-                }
-                #pBSB04 {
-                    margin: -1px 0 0 185px;
-                }
-                #pBSB05 {
-                    margin: -1px 0 0 185px;
-                }
-                #pBSB06 {
-                    margin: -1px 0 0 155px;
-                }
-                #pBSB07 {
-                    margin: -1px 0 0 125px;
-                }
-                #pBSB08 {
-                    margin: -1px 0 0 145px;
-                }
-                #pBSB09 {
-                    margin: -1px 0 0 50px;
-                }
+                    #pBSB01 {
+                        margin: -1px 0 0 70px;
+                    }
+                    #pBSB02 {
+                        margin: -1px 0 0 115px;
+                    }
+                    #pBSB03 {
+                        margin: -1px 0 0 20px;
+                    }
+                    #pBSB04 {
+                        margin: -1px 0 0 185px;
+                    }
+                    #pBSB05 {
+                        margin: -1px 0 0 185px;
+                    }
+                    #pBSB06 {
+                        margin: -1px 0 0 155px;
+                    }
+                    #pBSB07 {
+                        margin: -1px 0 0 125px;
+                    }
+                    #pBSB08 {
+                        margin: -1px 0 0 145px;
+                    }
+                    #pBSB09 {
+                        margin: -1px 0 0 50px;
+                    }
         #rightPanel {
-            width: 505px;
+            width: 585px;
             height: fit-content;
             float: right;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            box-sizing: border-box;
             text-align: left;
             margin: 20px auto;
+            padding: 0 20px 0 0;
             color: #3b3b3b;
         }
         #rightPanel h1 {
@@ -312,16 +362,98 @@ a {
             padding: 0;
         }
         #formationPanel {
+            display: flex;
+            flex-direction: column;
             height: fit-content;
+        }
+        #formationPanel p {
+            margin: 0;
+        }
+        #formationPanel h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            width: fit-content;
+            background-color: #3b3b3b;
+            color: #fddb6a;
+        }
+        #formationPanel h3 {
+            margin: 4px 0 10px 0;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 500;
+            width: fit-content;
+            line-height: 18px;
         }
         #experiencePanel {
             height: fit-content;
         }
-        #langPanel {
+        #containerLangPanel {
+            display: flex;
+            justify-content: space-around;
             height: fit-content;
+            margin: -10px 0 0 0;
         }
+        #containerLangPanel h3 {
+            font-weight: 800;
+            font-size: 13px;
+            margin: -14px 0 0 0;
+        }
+            .flags {
+                width: 55px;
+                margin: 0;
+            }
+        #ptBR {
+            width: 120px;
+            margin: 0;
+        }
+        #en {
+            width: 120px;
+            margin: 0;
+        }
+        #es {
+            width: 120px;
+            margin: 0;
+        }
+            #ptBRText01 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #F25757;
+            }
+            #ptBRText02 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #fddb6a;
+            }
+            #enText01 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #F25757;
+            }
+            #enText02 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #fddb6a;
+            }
+            #esText01 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #F25757;
+            }
+            #esText02 {
+                width: fit-content;
+                font-weight: 800;
+                background-color: #3b3b3b;
+                color: #cfe2e2;
+            }
         #portifolioPanel {
             height: fit-content;
+            margin: 15px 0 0 0;
         }
         /* ///CONTATO.HTML */
         #contactTitle {
