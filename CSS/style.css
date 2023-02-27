@@ -56,6 +56,45 @@ a {
     align-items: center;
     justify-content: center;
 }
+#containerA4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 905px;
+    margin: 0 auto;
+}
+    #menu {
+        width: 80px;
+        height: 55px;
+        background-color: #F25757;
+        box-shadow: 0 0 10px #00000038;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 0 0 0 15px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        line-height: 20px;
+        z-index: 4;
+        transition: transform 0.1s ease-in-out;
+    }
+        #menu h2 {
+            text-align: center;
+        }
+        #menu a {
+            color: #ffffff;
+            text-shadow: 0 0 3px #00000085;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        #menu:hover {
+            transform: translate(7px);
+        }
+        #menuText {
+            margin: 3px auto;
+        }
     #A4Panel {
         width: 905px;
         height: fit-content;
@@ -65,35 +104,6 @@ a {
         background-size: cover;
         margin: 0;
     }
-        #menu {
-            width: 80px;
-            height: 55px;
-            background-color: #F25757;
-            box-shadow: 0 0 10px #00000038;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 0 885px;
-            position: fixed;
-            line-height: 20px;
-            z-index: 4;
-            transition: transform 0.1s ease-in-out;
-        }
-            #menu h2 {
-                text-align: center;
-            }
-            #menu a {
-                color: #ffffff;
-                text-shadow: 0 0 3px #00000085;
-                font-weight: 600;
-                font-size: 1rem;
-                font-family: 'Poppins', sans-serif;
-            }
-            #menu:hover {
-                transform: translate(-7px);
-            }
-            #menuText {
-                margin: 3px auto;
-            }
         #leftPanel {
             width: 320px;
             height: fit-content;
@@ -412,6 +422,9 @@ a {
             flex-direction: column;
             height: fit-content;
         }
+        #formationPanel h1 {
+            margin: 15px 0 0 0;
+        }
         #formationPanel p {
             margin: 0;
         }
@@ -434,6 +447,7 @@ a {
         }
         #containerBottom {
             display: flex;
+            margin: 15px 0 0 0;
         }
         #langPanel h1 {
             margin: 0;
@@ -658,7 +672,15 @@ a {
     .socialIMG:hover {
         transform: translate(0, 6px);
     }
-
+#containerFooter {
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    position: absolute;
+}
 #footer {
     display: flex;
     align-items: center;
@@ -670,9 +692,9 @@ a {
     border-radius: 15px;
     width: 410px;
     height: 16px;
-    transition: transform 0.16s ease-in-out;
-    position: fixed;
     z-index: 3;
+    margin: -10px 0 0 0;
+    transition: transform 0.15s ease-in-out;
 }
 #footer:hover {
     transform: translate(0,-2px);
